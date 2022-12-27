@@ -11,7 +11,7 @@ a
   text-decoration: none
   color: #010201
   :active, .nav_item:hover
-    color: #E06733
+    color: #e06733
     font-weight: 700
 
 button, .price_item_rectangle, .contacts_container, .social_icon
@@ -21,6 +21,8 @@ button, .price_item_rectangle, .contacts_container, .social_icon
 .container
   width: 1440px
   margin: auto
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    width: 768px
 
 .header
   position: relative
@@ -37,6 +39,12 @@ button, .price_item_rectangle, .contacts_container, .social_icon
   top: 42px
   display: flex
   justify-content: space-between
+  align-items: center
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    width: 668px
+    height: 47px
+    left: 50px
+    top: 35px
 
 .nav
   width: 452px
@@ -47,6 +55,11 @@ button, .price_item_rectangle, .contacts_container, .social_icon
   align-items: center
   justify-content: space-between
   line-height: 50px
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    width: 452px
+    height: 47px
+    left: 266px
+    top: 35px
 
 .logo
   display: flex
@@ -55,6 +68,11 @@ button, .price_item_rectangle, .contacts_container, .social_icon
   height: 50px
   left: 111px
   top: 52px
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    width: 77px
+    height: 21.04px
+    left: 50px
+    top: 45px
 
 img.logo_vector
   max-width: 20px
@@ -70,30 +88,53 @@ img.logo_vector
   top: 56.04px
   line-height: 21px
   color: #000000
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    width: 56.53px
+    left: 70.47px
+    top: 49.04px
+    line-height: 21px
 
 .welcome
+  width: 1440px
   height: 532px
-  background: #edf2ec
-
-.welcome_section
-  position: relative
-  width: 1222px
-  height: 407.36px
-  left: 109px
-  top: 62px
-
-.leafs
-  position: relative
-  width: 448.8px
-  height: 407.36px
-
-.leaf_1
-  position: absolute
-  width: 103.41px
-  height: 110.89px
-  left: 257.93px
-  top: 110.99px
-  background: url("../assets/img/leaf_1.png")
+  background: #EDF2EC
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    width: 768px
+    height: 420px
+  .welcome_section
+    position: relative
+    width: 1222px
+    height: 407.36px
+    left: 109px
+    top: 62px
+    @media only screen and (min-width: 360px) and (max-width: 768px)
+      width: 668px
+      height: 310px
+      left: 50px
+      top: 40px
+    .leafs
+      position: relative
+      width: 448.8px
+      height: 407.36px
+      @media only screen and (min-width: 360px) and (max-width: 768px)
+        width: 280px
+        height: 254.15px
+        left: 388px
+        top: 40px
+      .leaf_1
+        position: absolute
+        width: 103.41px
+        height: 110.89px
+        left: 257.93px
+        top: 110.99px
+        background: url("../assets/img/leaf_1.png")
+        @media only screen and (min-width: 360px) and (max-width: 768px)
+          width: 64.53px
+          height: 59.21px
+          left: 175px
+          top: 40px
+          background-size: 100%
+          background-repeat: no-repeat
 
 .leaf_2
   position: absolute
@@ -104,6 +145,13 @@ img.logo_vector
   background: url("../assets/img/leaf_2.png")
   background-position: center
   opacity: 0.22
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    width: 166.31px
+    height: 120px
+    top: -40px
+    background-size: 100%
+    background-repeat: no-repeat
+    opacity: 1
 
 .leaf_3
   position: absolute
@@ -113,6 +161,13 @@ img.logo_vector
   top: 198.6px
   background: url("../assets/img/leaf_3.png")
   background-position: center
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    width: 130px
+    height: 80px
+    top: 107px
+    left: 77px
+    background-size: 100%
+    background-repeat: no-repeat
 
 .leaf_4
   position: absolute
@@ -121,6 +176,12 @@ img.logo_vector
   top: 202.66px
   background: url("../assets/img/leaf_4.png")
   background-position: center
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    width: 62.58px
+    height: 40px
+    top: 95px
+    background-size: 100%
+    background-repeat: no-repeat
 
 .leaf_5
   position: absolute
@@ -130,6 +191,13 @@ img.logo_vector
   left: 310.12px
   background: url("../assets/img/leaf_5.png")
   background-position: center
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    width: 86.52px
+    height: 60px
+    left: 206px
+    top: 122px
+    background-size: 100%
+    background-repeat: no-repeat
 
 .wel_section
   position: absolute
@@ -143,6 +211,11 @@ img.logo_vector
   font-family: 'Inter'
   font-style: normal
   font-weight: 400
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    width: 346px
+    height: 310px
+    left: 0
+    top: 0
   span
     color: #499A18
   .welcome_bold_text
@@ -150,12 +223,25 @@ img.logo_vector
     font-size: 45px
     line-height: 50px
     color: #717171
+    @media only screen and (min-width: 360px) and (max-width: 768px)
+      width: 341px
+      height: 101px
+      left: 0px
+      font-size: 35px
+      line-height: 50px
+
   .welcome_text
     width: 525.44px
     height: 105px
     font-size: 20px
     line-height: 35px
     color: #636060
+    @media only screen and (min-width: 360px) and (max-width: 768px)
+      width: 341px
+      height: 105px
+      left: 0px
+      font-size: 16px
+      line-height: 25px
   button
     font-size: 16px
     line-height: 20px
@@ -163,10 +249,16 @@ img.logo_vector
     height: 44px
     border: 2px solid #E06733
     border-radius: 10px
+  button:hover
+    color: #ffffff
+    background: #e06733
 
 .about
   position: relative
   height: 666px
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    width: 768px
+    height: 783px
   .about_section
     position: absolute
     display: flex
@@ -175,12 +267,24 @@ img.logo_vector
     height: 479px
     left: 109px
     top: 93px
+    @media only screen and (min-width: 360px) and (max-width: 768px)
+      width: 668px
+      height: 350px
+      left: 50px
+      top: 40px
     .about_img
       position: absolute
       width: 464px
       height: 479px
       left: 758px
       background: url("../assets/img/houseplant_1.png")
+      @media only screen and (min-width: 360px) and (max-width: 768px)
+        width: 250px
+        height: 258px
+        left: 219px
+        top: 390px
+        background-size: 100%
+        background-repeat: no-repeat
     .about_text
       position: absolute
       display: flex
@@ -188,6 +292,10 @@ img.logo_vector
       justify-content: space-between
       width: 605px
       height: 350px
+      @media only screen and (min-width: 360px) and (max-width: 768px)
+        align-items: center
+        width: 668px
+        height: 350px
       .about_bold_text
         width: 463px
         height: 102px
@@ -195,6 +303,10 @@ img.logo_vector
         line-height: 52px
         color: #499A18
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        @media only screen and (min-width: 360px) and (max-width: 768px)
+          font-size: 35px
+          line-height: 46px
+          text-align: center
         span
           color: #e06733
       .about_norm_text
@@ -202,13 +314,20 @@ img.logo_vector
         font-size: 20px
         line-height: 30px
         color: #636060
+        @media only screen and (min-width: 360px) and (max-width: 768px)
+          width: 668px
+          height: 208px
+          left: 50px
 
 .service
   position: relative
   height: 1300px
   background: #edf2ec
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    width: 768px
+    height: 1780px
   .services_content
-    position: absolute
+    position: relative
     display: flex
     justify-content: space-between
     align-items: center
@@ -216,30 +335,50 @@ img.logo_vector
     height: 94px
     left: 109px
     top: 40px
+    @media only screen and (min-width: 360px) and (max-width: 768px)
+      width: 768px
+      height: 244px
+      left: 50px
+      justify-content: space-evenly
+      align-items: flex-start
+      flex-direction: column
     .services_content_text
       width: 306px
       height: 94px
       font-size: 40px
       line-height: 52px
       color: #499a18
+      @media only screen and (min-width: 360px) and (max-width: 768px)
+        left: 50px
+        top: 60px
+        font-size: 35px
+        line-height: 46px
     .services_btn
       display: flex
       justify-content: space-around
       width: 559px
       height: 50px
-      button
-        font-family: 'Inika'
-        font-style: normal
-        font-weight: 400
-        font-size: 20px
-        line-height: 26px
-        color: #e06733
-        box-sizing: border-box
-        width: 161px
-        height: 50px
-        border: 1px solid #e06733
-        border-radius: 5px
-        cursor: pointer
+      @media only screen and (min-width: 360px) and (max-width: 768px)
+        left: 50px
+        top: 194px
+      .btn
+        color: #ffffff
+        button
+          font-family: 'Inika'
+          font-style: normal
+          font-weight: 400
+          font-size: 20px
+          line-height: 26px
+          width: 161px
+          height: 50px
+          border: 1px solid #e06733
+          border-radius: 5px
+          color: #e06733
+        button:hover
+          color: #ffffff
+          background: #e06733
+          box-sizing: border-box
+          cursor: pointer
   .services
     position: absolute
     display: flex
@@ -249,33 +388,50 @@ img.logo_vector
     height: 955px
     left: 109px
     top: 224px
+    @media only screen and (min-width: 360px) and (max-width: 768px)
+      width: 668px
+      height: 1426px
+      left: 50px
+      top: 284px
     .services_item
       position: relative
       width: 330px
       height: 450px
+      @media only screen and (min-width: 360px) and (max-width: 768px)
+        width: 281px
+        height: 450px
+        img
+          width: 280px
       .services_item_title
         position: absolute
         width: 120px
         height: 24px
         left: 50%
         margin-left: -60px
-        top: 360px
+        top: 10px
         font-family: 'Inter'
         font-weight: 700
         font-size: 20px
         line-height: 20px
         color: #e06733
+        @media only screen and (min-width: 360px) and (max-width: 768px)
+          text-align: center
       .services_item_text
         position: absolute
         width: 267.19px
         height: 20px
         left: 50%
         margin-left: -133.6px
-        top: 394px
+        top: 44px
         font-weight: 400
         font-size: 16px
         line-height: 20px
         color: #717171
+        @media only screen and (min-width: 360px) and (max-width: 768px)
+          width: 201px
+          height: 40px
+          margin-left: -100px
+          text-align: center
       .services_item_rectangle
         position: absolute
         top: 350px
@@ -284,11 +440,17 @@ img.logo_vector
         height: 100px
         border: 1px solid #e3e1d5
         border-radius: 0px 0px 20px 20px
-
+        @media only screen and (min-width: 360px) and (max-width: 768px)
+          display: flex
+          justify-content: center
+          top: 296px
+          width: 281px
 .prices
   position: relative
   height: 560px
   background: #ffffff
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    height: 585px
   .prices_wrapper
     position: relative
     width: 1222px
@@ -297,12 +459,20 @@ img.logo_vector
     top: 40px
     font-family: 'Inter'
     font-style: normal
+    @media only screen and (min-width: 360px) and (max-width: 768px)
+      width: 668px
+      height: 357.98px
+      left: 50px
+      top: 0
     .prices_leafs
       position: relative
       width: 152px
       height: 174.99px
       left: 1070px
       bottom: 115px
+      @media only screen and (min-width: 360px) and (max-width: 768px)
+        left: 510px
+        bottom: 50px
       .prices_leaf_1
         position: absolute
         width: 50px
@@ -335,6 +505,11 @@ img.logo_vector
       height: 191.01px
       left: 770px
       top: 40px
+      @media only screen and (min-width: 360px) and (max-width: 768px)
+        width: 296px
+        height: 357.98px
+        left: 372px
+        top: 139px
       .text
         position: absolute
         width: 452px
@@ -344,6 +519,12 @@ img.logo_vector
         line-height: 50px
         text-align: right
         color: #000000
+        @media only screen and (min-width: 360px) and (max-width: 768px)
+          width: 296px
+          height: 77.41px
+          font-size: 25px
+          line-height: 35px
+          text-align: right
         span
           color: #499a18
       button
@@ -361,6 +542,12 @@ img.logo_vector
         line-height: 26px
         text-align: center
         color: #e06733
+        @media only screen and (min-width: 360px) and (max-width: 768px)
+          left: 133px
+          top: 103px
+      button:hover
+        color: #ffffff
+        background: #e06733
     .prices_items
       position: relative
       width: 332px
@@ -427,8 +614,8 @@ img.logo_vector
   position: relative
   height: 550px
   background: #edf2ec
-  font-family: 'Inika'
-  font-style: normal
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    height: 739px
   .contacts_title_text
     position: relative
     width: 195px
@@ -439,6 +626,9 @@ img.logo_vector
     font-size: 40px
     line-height: 52px
     color: #499a18
+    @media only screen and (min-width: 360px) and (max-width: 768px)
+      top: 40px
+      left: 288px
   .contact_img
     position: absolute
     width: 400px
@@ -446,6 +636,12 @@ img.logo_vector
     left: 109px
     top: 53px
     background: url("../assets/img/contact_woman.png")
+    @media only screen and (min-width: 360px) and (max-width: 768px)
+      width: 200px
+      height: 248.49px
+      background-size: 100%
+      left: 294px
+      top: 491px
   .contacts_container
     position: absolute
     width: 450px
@@ -455,6 +651,9 @@ img.logo_vector
     background: #d6e7d2
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
     border-radius: 0px
+    @media only screen and (min-width: 360px) and (max-width: 768px)
+      top: 191px
+      left: 159px
     .contacts_container_text
       position: absolute
       width: 204px
@@ -485,6 +684,9 @@ img.logo_vector
   height: 130px
   background: #FFFFFF
   color: #000000
+  @media only screen and (min-width: 360px) and (max-width: 768px)
+    width: 768px
+    height: 181px
   .footer_content
     position: relative
     width: 1222px
@@ -496,6 +698,11 @@ img.logo_vector
     font-weight: 400
     font-size: 20px
     line-height: 50px
+    @media only screen and (min-width: 360px) and (max-width: 768px)
+      width: 768px
+      height: 130px
+      margin: 0
+      top: 33px
     .footer_data
       position: absolute
       display: flex
@@ -503,10 +710,20 @@ img.logo_vector
       height: 50px
       width: 14%
       top: calc(50% - 50px/2)
+      @media only screen and (min-width: 360px) and (max-width: 768px)
+        width: 210px
+        height: 64px
+        left: 0
+        top: 0
+        line-height: 24px
       .copy_text
         position: relative
         left: 0
         right: 89.56%
+        @media only screen and (min-width: 360px) and (max-width: 768px)
+          width: 210px
+          height: 64px
+          line-height: 24px
       .year_text
         position: relative
         left: 21.43%
@@ -519,6 +736,12 @@ img.logo_vector
       position: absolute
       left: 42.71%
       top: calc(50% - 50px/2)
+      @media only screen and (min-width: 360px) and (max-width: 768px)
+        margin: 0
+        left: 0
+        top: 49px
+        line-height: 24px
+
     .footer_social_list
       position: absolute
       display: flex
@@ -527,4 +750,7 @@ img.logo_vector
       height: 50px
       right: 0
       font-size: 24px
+      @media only screen and (min-width: 360px) and (max-width: 768px)
+        position: relative
+        top: 87px
 
